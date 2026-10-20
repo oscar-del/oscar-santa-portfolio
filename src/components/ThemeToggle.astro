@@ -9,7 +9,7 @@ const t = useTranslations(lang)
   type="button"
   id="theme-toggle"
   aria-label={t("theme.label")}
-  aria-pressed="false"
+  aria-pressed="true"
   title={t("theme.toggle")}
 >
   <svg
@@ -29,11 +29,10 @@ const t = useTranslations(lang)
 <script>
   const root = document.documentElement
   const button = document.getElementById("theme-toggle")!
-  const prefersDark = matchMedia("(prefers-color-scheme: dark)")
   const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)")
 
   const currentTheme = () =>
-    root.dataset.theme ?? (prefersDark.matches ? "dark" : "light")
+    root.dataset.theme ?? "dark"
 
   const syncButton = () => {
     button.setAttribute("aria-pressed", String(currentTheme() === "dark"))
@@ -61,12 +60,11 @@ const t = useTranslations(lang)
   })
 
   window.addEventListener("storage", ({ key, newValue }) => {
-    if (key === "theme" && (newValue === "light" || newValue === "dark")) {
-      applyTheme(newValue)
+    if (key === "theme" || key === null) {
+      applyTheme(newValue === "light" ? "light" : "dark")
     }
   })
 
-  prefersDark.addEventListener("change", syncButton)
   syncButton()
 </script>
 

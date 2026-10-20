@@ -1,275 +1,221 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full-Stack developer with more than 15 years of experience & development content creator",
+    "name": "Oscar Eduardo Santa Acosta",
+    "label": "Full-Stack Developer & Developer Advocate Engineer",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 years of experience as a web developer. Currently I am a content creator and development communicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+    "email": "oscarsantaacosta@gmail.com",
+    "phone": "+573125861177",
+    "url": "https://www.linkedin.com/in/oscar-santa-acosta",
+    "summary": "I am a systems engineer. I build software, connect services and automate processes to turn business needs into working solutions. My experience combines full-stack development, infrastructure and technical guidance for teams and customers.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "Spain"
+      "postalCode": "",
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "oscar-santa-acosta",
+        "url": "https://www.linkedin.com/in/oscar-santa-acosta"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "LabsMobile",
+      "position": "Full-Stack Developer · Developer Advocate Engineer · QA Engineer",
+      "url": "",
+      "startDate": "2022-06",
       "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "summary": "Software development, automation and integrations for an SMS communication platform.",
       "highlights": [
-        "Started the company"
+        "I manage development projects from planning through production deployment.",
+        "I develop and maintain a Python SVM SMS classifier to improve spam detection.",
+        "I implement n8n automations for notifications and internal tasks.",
+        "I develop integration modules for Make, n8n, Zapier, Shopify, npm and Composer.",
+        "I support sales teams and customers in technical meetings to help integrate the API.",
+        "I lead IT operations, technology equipment management and information security."
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
+      "name": "Document Colombia",
+      "position": "Support Engineer",
+      "url": "",
+      "startDate": "2013-07",
+      "endDate": "2022-06",
+      "summary": "Systems team coordination, internal software development and infrastructure administration.",
       "highlights": [
-        "Started the company"
+        "I coordinated systems team activities and service-level agreement (SLA) compliance.",
+        "I developed accounting modules with PHP, MySQL, .NET, HTML and CSS.",
+        "I supervised technical support for banking institutions and resolved level I, II and III incidents.",
+        "I administered network infrastructure and communication racks."
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
-      "highlights": [
-        "Started the company"
-      ]
+      "name": "TVNOVEDADESTV",
+      "position": "IT Support Technician",
+      "url": "",
+      "startDate": "2012-07",
+      "endDate": "2013-01",
+      "summary": "Level I technical support and preventive and corrective computer maintenance.",
+      "highlights": []
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Software Engineer",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "education": [
+    {
+      "institution": "Universidad Nacional Abierta y a Distancia",
+      "url": "",
+      "area": "Systems Engineering",
+      "studyType": "Engineering degree",
+      "startDate": "",
+      "endDate": "2024-04",
+      "score": "4.5",
+      "courses": [],
+      "honors": "Graduated with honors with a 4.5 academic average"
+    },
+    {
+      "institution": "SENA",
+      "url": "",
+      "area": "Computer Network Administration",
+      "studyType": "Technology degree",
+      "startDate": "",
+      "endDate": "2013-01",
+      "score": "",
+      "courses": [],
+      "honors": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Linux Essential",
+      "date": "",
+      "issuer": "",
+      "url": "",
+      "type": "Diploma course"
+    }
+  ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
+      "name": "Languages",
+      "level": "",
       "keywords": [
-        "Web development", "Frontend"
+        "PHP",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "HTML",
+        "CSS"
       ]
     },
     {
-      "name": "CSS",
-      "level": "Master",
+      "name": "Frameworks & libraries",
+      "level": "",
       "keywords": [
-        "Web development", "Frontend", "Diseño Responsive"
+        "Laravel",
+        "Yii",
+        "Spring Boot",
+        "Node.js",
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Nuxt",
+        ".NET"
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
+      "name": "Data & storage",
+      "level": "",
       "keywords": [
-        "Web development", "Frontend", "Backend", "Fullstack"
+        "MySQL",
+        "MariaDB",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Advanced",
+      "name": "Tools & integrations",
+      "level": "",
       "keywords": [
-        "Web development", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Advanced",
-      "keywords": [
-        "Bases de Datos", "SQL", "Database", "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Advanced",
-      "keywords": [
-        "Version control", "Colaboración", "Source code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Advanced",
-      "keywords": [
-        "Version control", "Collaboration", "Source code", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "JavaScript Library", "UI"
+        "Docker",
+        "Git",
+        "GitHub",
+        "Bitbucket",
+        "Jira",
+        "Grafana",
+        "n8n",
+        "Make",
+        "APIs REST",
+        "Shopify"
       ]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "B1"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "name": "Intelligent SMS classification",
+      "isActive": false,
+      "category": "Machine learning",
+      "description": "Development and maintenance of a Python SVM message classifier to improve spam detection.",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "Python",
+        "SVM",
+        "SMS"
       ],
-      "url": "https://mars.codes"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     },
     {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "name": "Services working together",
+      "isActive": false,
+      "category": "API integrations",
+      "description": "Modules connecting the LabsMobile API to Make, n8n, Zapier, Shopify, npm and Composer.",
       "highlights": [
-        "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
+        "APIs REST",
+        "Shopify",
+        "npm",
+        "Composer"
       ],
-      "url": "https://advent.js/dev"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
+      "name": "Fewer manual tasks",
+      "isActive": false,
+      "category": "Automation",
+      "description": "n8n workflows for notifications and internal tasks, reducing manual intervention.",
       "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
+        "n8n",
+        "Make",
+        "Workflows"
       ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
-      "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
-      "highlights": [
-        "100% free",
-        "+500 community solutions"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-      "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
-      ],
-      "url": "https://miduconf.com"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     }
-  ]
+  ],
+  "volunteer": [],
+  "awards": [],
+  "publications": [],
+  "interests": [],
+  "references": []
 }

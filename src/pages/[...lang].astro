@@ -1,90 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro"
-
-import About from "@/components/sections/About.astro"
-import Education from "@/components/sections/Education.astro"
-import Experience from "@/components/sections/Experience.astro"
-import Hero from "@/components/sections/Hero.astro"
-import Projects from "@/components/sections/Projects.astro"
-import Skills from "@/components/sections/Skills.astro"
-import KeyboardManager from "@/components/KeyboardManager.astro"
-import LanguagePicker from "@/components/LanguagePicker.astro"
-import ThemeToggle from "@/components/ThemeToggle.astro"
-
-import {
-  DEFAULT_LANG,
-  LANGUAGES,
-  getCV,
-  useTranslations,
-  type Lang
-} from "@/i18n"
-
+import Portfolio from "@/components/Portfolio.astro"
+import { DEFAULT_LANG, LANGUAGES, getCV, useTranslations, type Lang } from "@/i18n"
 export function getStaticPaths() {
   return Object.keys(LANGUAGES).map((lang) => ({
-    params: { lang: lang === DEFAULT_LANG ? undefined : lang },
-    props: { lang }
+    params: { lang: lang === DEFAULT_LANG ? undefined : lang }, props: { lang }
   }))
 }
-
 const lang = Astro.props.lang as Lang
 const { name, label } = getCV(lang).basics
-const t = useTranslations(lang)
 ---
-
-<Layout title={t("meta.title", { name, label })} lang={lang}>
-  <main>
-    <div class="toolbar no-print">
-      <LanguagePicker lang={lang} />
-      <ThemeToggle lang={lang} />
-    </div>
-    <Hero lang={lang} />
-    <About lang={lang} />
-    <Experience lang={lang} />
-    <Education lang={lang} />
-    <Projects lang={lang} />
-    <Skills lang={lang} />
-  </main>
-
-  <KeyboardManager lang={lang} />
+<Layout title={useTranslations(lang)("meta.title", { name, label })} lang={lang}>
+  <Portfolio lang={lang} />
 </Layout>
-
-<style>
-  main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
-    max-width: calc(var(--label-col) + var(--gutter) + var(--content-col));
-    margin: 0 auto;
-    padding: 6rem 1.5rem 8rem;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  @media screen and (width <= 720px) {
-    main {
-      gap: 2.75rem;
-      padding: 4.5rem 1.25rem 7rem;
-    }
-
-    .toolbar {
-      top: 1.125rem;
-      right: 1.25rem;
-    }
-  }
-
-  @media print {
-    main {
-      gap: 1.5rem;
-      max-width: none;
-      padding: 0;
-    }
-  }
-</style>

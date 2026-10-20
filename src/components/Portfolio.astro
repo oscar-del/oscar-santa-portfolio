@@ -1,0 +1,111 @@
+---
+import { getCV, type Lang } from "@/i18n"
+import LanguagePicker from "./LanguagePicker.astro"
+import ThemeToggle from "./ThemeToggle.astro"
+import SectionHeading from "./SectionHeading.astro"
+import Mail from "@/icons/Mail.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import GitHub from "@/icons/GitHub.astro"
+import "@/styles/portfolio.css"
+const { lang } = Astro.props as { lang: Lang }
+const cv = getCV(lang)
+const es = lang === "es"
+const profiles = cv.basics.profiles.filter(profile => /^https?:\/\//.test(profile.url))
+const c = es ? {
+  projects: "Trabajo destacado", experience: "Experiencia", about: "Sobre mí", contact: "Contacto", greeting: "Hola, soy", current: "Actualmente en LabsMobile", mail: "Contáctame", download: "Descargar CV", downloadLabel: "Descargar currículum en español (DOCX)", print: "Imprimir / PDF", present: "Actualidad", more: "Ver responsabilidades", projectContext: "En", tech: "Tecnologías", education: "Formación", diploma: "Diplomado", contactIntro: "Puedes contactarme por correo o encontrarme en LinkedIn.", copied: "Correo copiado", copy: "Copiar correo", top: "Volver arriba", skip: "Ir al contenido", projectIntro: "Soluciones desarrolladas como parte de mi trabajo en LabsMobile."
+} : {
+  projects: "Selected work", experience: "Experience", about: "About me", contact: "Contact", greeting: "Hi, I’m", current: "Currently at LabsMobile", mail: "Contact me", download: "Download CV", downloadLabel: "Download résumé in Spanish (DOCX)", print: "Print / PDF", present: "Present", more: "View responsibilities", projectContext: "At", tech: "Technologies", education: "Education", diploma: "Diploma course", contactIntro: "You can reach me by email or find me on LinkedIn.", copied: "Email copied", copy: "Copy email", top: "Back to top", skip: "Skip to content", projectIntro: "Solutions developed as part of my work at LabsMobile."
+}
+const date = (value: string) => value ? new Intl.DateTimeFormat(lang, { month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(`${value.slice(0, 7)}-01T00:00:00Z`)) : ""
+---
+<a class="skip-link" href="#main">{c.skip}</a>
+<header class="site-header" id="top">
+  <nav class="main-nav" aria-label={es ? "Navegación principal" : "Main navigation"}>
+    <a href="#experiencia">{c.experience}</a><a href="#trabajo">{c.projects}</a><a href="#sobre-mi">{c.about}</a><a href="#contacto">{c.contact}</a>
+  </nav>
+  <div class="header-actions"><LanguagePicker lang={lang} /><ThemeToggle lang={lang} /></div>
+</header>
+<main id="main" class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-identity">{cv.basics.image && <span id="profile-photo" class="profile-photo"><img id="profile-image" class="profile-image" src={cv.basics.image} alt={cv.basics.name} width="1644" height="2507" /></span>}<span id="profile-monogram" class="monogram" hidden={Boolean(cv.basics.image)} aria-hidden="true">os.</span></div>
+    <div class="hero-heading">
+    <h1 id="hero-title">{c.greeting} <span>Oscar Santa</span></h1>
+    <p class="hero-role">{cv.basics.label}</p>
+    <p class="hero-employment">{c.current}</p>
+    <p class="hero-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" /></svg>{cv.basics.location.city}, {cv.basics.location.region}</p>
+    </div>
+    <p class="hero-intro">{es ? "Ingeniero de sistemas con experiencia en" : "Systems engineer with experience in"} <strong>{es ? "desarrollo de software, integraciones de APIs y automatización" : "software development, API integrations and automation"}</strong>. {es ? "Acompaño a equipos y clientes desde la planificación hasta la puesta en producción." : "I support teams and customers from the first idea through production deployment."}</p>
+    <div class="hero-actions no-print">
+      <a class="button" href={`mailto:${cv.basics.email}`}><span aria-hidden="true"><Mail /></span>{c.mail}</a>
+      {profiles.map(profile => <a class="button" href={profile.url} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">{profile.network === "GitHub" ? <GitHub /> : profile.network === "LinkedIn" ? <LinkedIn /> : null}</span>{profile.network}</a>)}
+      <a class="button" href="/Oscar-Santa-ES.docx" download aria-label={c.downloadLabel}><span aria-hidden="true">↓</span>{c.download}</a>
+      <button type="button" id="print-cv" class="print-button">{c.print} <span aria-hidden="true">↗</span></button>
+    </div>
+    <p class="print-contact">{cv.basics.email} · {cv.basics.phone}{profiles.map(profile => <span> · {profile.url.replace(/^https?:\/\//, "")}</span>)}</p>
+  </section>
+  <section class="experience-section" id="experiencia" aria-labelledby="experience-title">
+    <SectionHeading id="experience-title" title={c.experience} icon="work" />
+    <div class="timeline">{cv.work.map((work, i) => <article class="job">
+      <div class="job-info"><span class:list={["timeline-dot", { current: i === 0 }]} aria-hidden="true"></span><h3>{work.name}</h3><p class="job-role">{work.position}</p><p class="job-period">{date(work.startDate)} — {work.endDate ? date(work.endDate) : c.present}</p></div>
+      <div class="job-content"><p>{work.summary}</p>{work.highlights.length > 0 && <details open={i === 0}><summary>{c.more}<span aria-hidden="true">+</span></summary><ul>{work.highlights.map(item => <li>{item}</li>)}</ul></details>}</div>
+    </article>)}</div>
+  </section>
+  <section class="work-section" id="trabajo" aria-labelledby="work-title">
+    <SectionHeading id="work-title" title={c.projects} icon="code" />
+    <p class="section-intro">{c.projectIntro}</p>
+    <div class="project-grid">{cv.projects.map(project => <article class="project"><p class="eyebrow">{project.category}</p><h3>{project.name}</h3><p class="project-description">{project.description}</p><ul class="tags">{project.highlights.map(tag => <li>{tag}</li>)}</ul><p class="project-context">{c.projectContext} {project.context}</p></article>)}</div>
+  </section>
+  <section class="about-section resume-row" id="sobre-mi" aria-labelledby="about-title">
+    <SectionHeading id="about-title" title={c.about} icon="user" />
+    <div class="about-copy"><p>{cv.basics.summary}</p><div class="language-row">{cv.languages.map(item => <span>{item.language}<strong>{item.fluency}</strong></span>)}</div></div>
+  </section>
+  <section class="stack-section resume-row" aria-labelledby="stack-title">
+    <SectionHeading id="stack-title" title={c.tech} icon="stack" />
+    <div class="stack-grid">{cv.skills.map(skill => <article><h3>{skill.name}</h3><ul>{skill.keywords.map(keyword => <li>{keyword}</li>)}</ul></article>)}</div>
+  </section>
+  <section class="education-section resume-row" aria-labelledby="education-title">
+    <SectionHeading id="education-title" title={c.education} icon="education" />
+    <div class="education-list">{cv.education.map(item => <article><div class="education-heading"><h3>{item.area}</h3><p class="eyebrow">{date(item.endDate)}</p></div><p>{item.institution}</p>{item.honors && <span class="honors">{item.honors}</span>}</article>)}{cv.certificates.map(item => <article><h3>{item.name}</h3><p>{c.diploma}</p></article>)}</div>
+  </section>
+  <section class="contact-section resume-row" id="contacto" aria-labelledby="contact-title">
+    <SectionHeading id="contact-title" title={c.contact} icon="mail" />
+    <div><p class="section-intro">{c.contactIntro}</p><div class="contact-links"><a class="email-link" href={`mailto:${cv.basics.email}`}>{cv.basics.email}</a><button id="copy-email" class="no-print" data-email={cv.basics.email} data-copied={c.copied}>{c.copy} <span aria-hidden="true">⧉</span></button><span id="copy-status" role="status" class="sr-only"></span><a href={`tel:${cv.basics.phone}`}>+57 312 586 11 77</a>{profiles.map(profile => <a href={profile.url} target="_blank" rel="noopener noreferrer">{profile.network} ↗</a>)}</div></div>
+  </section>
+</main>
+<footer class="container site-footer"><p>© {new Date().getFullYear()} Oscar Santa</p><a href="#top">{c.top} ↑</a></footer>
+<script>
+  const profileImage = document.querySelector<HTMLImageElement>("#profile-image")
+  const showMonogram = () => {
+    const photo = document.querySelector<HTMLElement>("#profile-photo")
+    if (photo) photo.hidden = true
+    const monogram = document.querySelector<HTMLElement>("#profile-monogram")
+    if (monogram) monogram.hidden = false
+  }
+  profileImage?.addEventListener("error", showMonogram)
+  if (profileImage?.complete && profileImage.naturalWidth === 0) showMonogram()
+
+  document.getElementById("print-cv")?.addEventListener("click", () => window.print())
+  const copyButton = document.querySelector<HTMLButtonElement>("#copy-email")
+  copyButton?.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(copyButton.dataset.email ?? "")
+      const status = document.querySelector("#copy-status")
+      if (status) status.textContent = copyButton.dataset.copied ?? ""
+      const original = copyButton.innerHTML
+      copyButton.textContent = copyButton.dataset.copied ?? ""
+      setTimeout(() => { copyButton.innerHTML = original }, 2500)
+    } catch { window.location.href = `mailto:${copyButton.dataset.email}` }
+  })
+  window.addEventListener("beforeprint", () => {
+    document.querySelectorAll<HTMLDetailsElement>("details").forEach(detail => {
+      detail.dataset.wasOpen = String(detail.open)
+      detail.open = true
+    })
+  })
+  window.addEventListener("afterprint", () => {
+    document.querySelectorAll<HTMLDetailsElement>("details").forEach(detail => {
+      detail.open = detail.dataset.wasOpen === "true"
+      delete detail.dataset.wasOpen
+    })
+  })
+</script>

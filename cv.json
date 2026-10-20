@@ -1,275 +1,221 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
+    "name": "Oscar Eduardo Santa Acosta",
+    "label": "Full-Stack Developer & Developer Advocate Engineer",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "email": "oscarsantaacosta@gmail.com",
+    "phone": "+573125861177",
+    "url": "https://www.linkedin.com/in/oscar-santa-acosta",
+    "summary": "Soy ingeniero de sistemas. Desarrollo software, conecto servicios y automatizo procesos para convertir necesidades de negocio en soluciones que funcionan. Mi experiencia reúne desarrollo full stack, infraestructura y acompañamiento técnico a equipos y clientes.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "postalCode": "",
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "oscar-santa-acosta",
+        "url": "https://www.linkedin.com/in/oscar-santa-acosta"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "oscar-del",
+        "url": "https://github.com/oscar-del"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "LabsMobile",
+      "position": "Full-Stack Developer · Developer Advocate Engineer · QA Engineer",
+      "url": "",
+      "startDate": "2022-06",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "Desarrollo de software, automatización e integraciones para una plataforma de comunicación SMS.",
       "highlights": [
-        "Started the company"
+        "Gestiono proyectos desde la planificación hasta el despliegue a producción.",
+        "Desarrollo y mantengo un clasificador de SMS con modelos SVM en Python para mejorar la detección de spam.",
+        "Implemento automatizaciones con n8n para gestionar notificaciones y tareas internas.",
+        "Desarrollo módulos de integración para Make, n8n, Zapier, Shopify, npm y Composer.",
+        "Acompaño al equipo comercial y a clientes en reuniones técnicas para facilitar la integración de la API.",
+        "Lidero el área de informática, los equipos tecnológicos y la seguridad de la información."
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "Document Colombia",
+      "position": "Ingeniero de soporte",
+      "url": "",
+      "startDate": "2013-07",
+      "endDate": "2022-06",
+      "summary": "Coordinación del equipo de sistemas, desarrollo interno y administración de infraestructura.",
       "highlights": [
-        "Started the company"
+        "Coordiné las actividades del equipo de sistemas y el cumplimiento de los acuerdos de nivel de servicio (SLA).",
+        "Desarrollé módulos contables con PHP, MySQL, .NET, HTML y CSS.",
+        "Supervisé el soporte técnico para entidades bancarias y resolví incidentes de niveles I, II y III.",
+        "Administré la infraestructura de redes y los racks de comunicaciones."
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
-      "highlights": [
-        "Started the company"
-      ]
+      "name": "TVNOVEDADESTV",
+      "position": "Técnico de soporte",
+      "url": "",
+      "startDate": "2012-07",
+      "endDate": "2013-01",
+      "summary": "Soporte técnico de nivel I y mantenimiento preventivo y correctivo de equipos de cómputo.",
+      "highlights": []
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "education": [
+    {
+      "institution": "Universidad Nacional Abierta y a Distancia",
+      "url": "",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Ingeniería",
+      "startDate": "",
+      "endDate": "2024-04",
+      "score": "4.5",
+      "courses": [],
+      "honors": "Grado de honor por promedio académico de 4.5"
+    },
+    {
+      "institution": "SENA",
+      "url": "",
+      "area": "Tecnología en Administración de Redes de Computadores",
+      "studyType": "Tecnología",
+      "startDate": "",
+      "endDate": "2013-01",
+      "score": "",
+      "courses": [],
+      "honors": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Linux Essential",
+      "date": "",
+      "issuer": "",
+      "url": "",
+      "type": "Diplomado"
+    }
+  ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
+      "name": "Lenguajes",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend"
+        "PHP",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "HTML",
+        "CSS"
       ]
     },
     {
-      "name": "CSS",
-      "level": "Master",
+      "name": "Frameworks y librerías",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
+        "Laravel",
+        "Yii",
+        "Spring Boot",
+        "Node.js",
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Nuxt",
+        ".NET"
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
+      "name": "Datos y almacenamiento",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        "MySQL",
+        "MariaDB",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
+      "name": "Herramientas e integraciones",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        "Docker",
+        "Git",
+        "GitHub",
+        "Bitbucket",
+        "Jira",
+        "Grafana",
+        "n8n",
+        "Make",
+        "APIs REST",
+        "Shopify"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced"
+      "language": "Inglés",
+      "fluency": "B1"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "name": "Clasificación inteligente de SMS",
+      "isActive": false,
+      "category": "Machine learning",
+      "description": "Desarrollo y mantenimiento de un sistema de clasificación de mensajes con modelos SVM en Python para mejorar la detección de spam.",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "Python",
+        "SVM",
+        "SMS"
       ],
-      "url": "https://mars.codes"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     },
     {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "name": "Servicios que hablan entre sí",
+      "isActive": false,
+      "category": "Integraciones de API",
+      "description": "Módulos que conectan la API de LabsMobile con Make, n8n, Zapier, Shopify y los ecosistemas npm y Composer.",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "APIs REST",
+        "Shopify",
+        "npm",
+        "Composer"
       ],
-      "url": "https://adventjs.dev"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
+      "name": "Menos tareas manuales",
+      "isActive": false,
+      "category": "Automatización",
+      "description": "Flujos de trabajo con n8n para gestionar notificaciones y tareas internas, reduciendo la intervención manual.",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        "n8n",
+        "Make",
+        "Workflows"
       ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "url": "",
+      "github": "",
+      "context": "LabsMobile"
     }
-  ]
+  ],
+  "volunteer": [],
+  "awards": [],
+  "publications": [],
+  "interests": [],
+  "references": []
 }

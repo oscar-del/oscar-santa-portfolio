@@ -1,103 +1,50 @@
+# Portafolio de Oscar Santa
 
+Portafolio personal en Astro, con contenido en español e inglés, tema claro y oscuro y un diseño adaptable a móvil. Presenta experiencia profesional, trabajos destacados, tecnologías, formación y contacto.
 
-<div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
+## Contenido
 
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+- `cv.json`: información profesional en español.
+- `cv_english.json`: traducción al inglés con la misma estructura.
+- `src/components/Portfolio.astro`: secciones y textos de la interfaz en ambos idiomas.
+- `src/styles/portfolio.css`: diseño, temas, adaptación a móvil y estilos de impresión.
+- `public/Oscar-Santa-ES.docx`: CV original descargable, en español.
 
-</p>
+La fuente de los datos es el CV facilitado por Oscar. Los trabajos destacados son contribuciones profesionales en LabsMobile, no proyectos personales con repositorios públicos. No se atribuyen métricas ni enlaces de demostración ausentes en el CV. Las fechas se guardan con precisión de mes (`YYYY-MM`); los campos desconocidos permanecen vacíos y `endDate: null` indica un empleo vigente. El diplomado Linux Essential no incluye fecha ni institución porque el CV no los especifica.
 
-</div>
+Las rutas son `/` (español) y `/en/` (inglés). Al cambiar información profesional, actualiza ambos JSON. Los textos generales del nuevo diseño están en `Portfolio.astro`; los del selector de idioma y tema permanecen en `src/i18n/ui.ts`.
 
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
+## Desarrollo
 
-<p></p>
-
-<div align="center">
-
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
-
-</div>
-
-<img src="portada.png"></img>
-
-## 🛠️ Stack
-
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**HotKeyPad**](https://github.com/jesubohr/hotkeypad) - Paleta de comandos con atajos de teclado hecha en puro JavaScript.
-- [**Mona Sans**](https://github.com/github/mona-sans) - Tipografía variable, servida en local y recortada (`src/assets/fonts`).
-
-## 🚀 Empezar
-
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
-
-- Necesitas [Node.js](https://nodejs.org/) 22.22 o superior.
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+Requiere Node.js 24 y pnpm.
 
 ```bash
-# Instala pnpm
-pnpm install -g pnpm
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+pnpm install
+pnpm exec astro dev --background
 ```
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-
-#### Idiomas
-
-El portafolio se genera en español en `/` y en inglés en `/en/` (a partir de `cv_english.json`). Los idiomas se configuran en `src/i18n/index.ts` y los textos de la interfaz en `src/i18n/ui.ts`:
-
-- **Solo un idioma:** elimina `en` de `LANGUAGES` junto a su `import` y borra `cv_english.json`. El selector de idioma desaparece.
-- **Añadir un idioma:** crea su JSON (por ejemplo `cv_french.json`), impórtalo en `LANGUAGES` y añade sus textos en `ui.ts`.
-### 3. Lanza el servidor de desarrollo:
+Gestiona el servidor con:
 
 ```bash
-# Disfruta del resultado
-pnpm dev
+pnpm exec astro dev status
+pnpm exec astro dev logs
+pnpm exec astro dev stop
 ```
 
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+## Validación y producción
 
-## 🧞 Comandos
+```bash
+pnpm build
+```
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+El comando ejecuta `astro check` y genera las páginas estáticas en `dist/`. Antes de publicar, configura `site` en `astro.config.mjs` con el dominio definitivo para generar los enlaces canónicos y alternativos de idiomas.
 
-## 🔑 Licencia
+## Créditos
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
+Proyecto basado en [minimalist-portfolio-json de midudev](https://github.com/midudev/minimalist-portfolio-json), con rediseño y contenido personalizados. Tipografía local Portfolio Sans. Licencia [MIT](LICENSE.txt).
 
+## Foto y GitHub
+
+Guarda tu foto en `public/foto.webp` (también puedes usar JPG o PNG). En `basics.image`, dentro de `cv.json` y `cv_english.json`, escribe `/foto.webp`. Usa la barra inicial y omite `public` en la ruta. Si el campo está vacío o la imagen no carga, se muestran las iniciales.
+
+En ambos JSON, busca la entrada con `"network": "GitHub"` dentro de `basics.profiles`. Completa `username` con tu usuario y `url` con `https://github.com/TU_USUARIO`. El botón aparece en la presentación y en contacto cuando completas la URL; también se incluye al imprimir. Las entradas sin URL permanecen ocultas.
