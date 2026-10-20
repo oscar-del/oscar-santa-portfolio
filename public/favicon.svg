@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#244cda"/><text x="32" y="42" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="29" font-weight="700">os.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Oscar Santa</title>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="#17181b" stroke="#303238" stroke-width="2"/>
+  <g stroke="#e6c27e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="21" cy="34" rx="8" ry="10"/>
+    <path d="M46 26C43 23 35 24 35 29C35 34 47 32 47 38C47 44 38 45 34 41"/>
+  </g>
+  <circle cx="54" cy="43" r="2.5" fill="#e6c27e"/>
+</svg>
