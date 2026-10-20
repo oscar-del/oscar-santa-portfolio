@@ -6,7 +6,7 @@
     "email": "oscarsantaacosta@gmail.com",
     "phone": "+573125861177",
     "url": "https://www.linkedin.com/in/oscar-santa-acosta",
-    "summary": "Soy ingeniero de sistemas. Desarrollo software, conecto servicios y automatizo procesos para convertir necesidades de negocio en soluciones que funcionan. Mi experiencia reúne desarrollo full stack, infraestructura y acompañamiento técnico a equipos y clientes.",
+    "summary": "Soy ingeniero de sistemas con experiencia en desarrollo full stack, automatización de procesos e integración de servicios. Lidero el área de informática, administrando servidores, equipos tecnológicos, la seguridad de la información y desarrollo de software.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -34,14 +34,14 @@
       "url": "",
       "startDate": "2022-06",
       "endDate": null,
-      "summary": "Desarrollo de software, automatización e integraciones para una plataforma de comunicación SMS.",
+      "summary": "Actualmente desarrollo software, automatizo procesos y creo integraciones en LabsMobile. También lidero el departamento de informática y administro los servidores y la infraestructura tecnológica de la empresa.",
       "highlights": [
-        "Gestiono proyectos desde la planificación hasta el despliegue a producción.",
-        "Desarrollo y mantengo un clasificador de SMS con modelos SVM en Python para mejorar la detección de spam.",
-        "Implemento automatizaciones con n8n para gestionar notificaciones y tareas internas.",
-        "Desarrollo módulos de integración para Make, n8n, Zapier, Shopify, npm y Composer.",
-        "Acompaño al equipo comercial y a clientes en reuniones técnicas para facilitar la integración de la API.",
-        "Lidero el área de informática, los equipos tecnológicos y la seguridad de la información."
+        "Gestionar proyectos desde la planificación hasta el despliegue a producción.",
+        "Desarrollar y mantener un clasificador de SMS con modelos SVM en Python para mejorar la detección de spam.",
+        "Implementar automatizaciones con n8n para gestionar notificaciones y tareas internas.",
+        "Desarrollar módulos de integración para Make, n8n, Zapier, Shopify, npm y Composer.",
+        "Apoyar al equipo comercial y a clientes en reuniones técnicas para facilitar la integración de la API.",
+        "Liderar el área de informática, administrando los servidores y equipos tecnológicos de la empresa y la seguridad de la información."
       ]
     },
     {
@@ -52,10 +52,10 @@
       "endDate": "2022-06",
       "summary": "Coordinación del equipo de sistemas, desarrollo interno y administración de infraestructura.",
       "highlights": [
-        "Coordiné las actividades del equipo de sistemas y el cumplimiento de los acuerdos de nivel de servicio (SLA).",
-        "Desarrollé módulos contables con PHP, MySQL, .NET, HTML y CSS.",
-        "Supervisé el soporte técnico para entidades bancarias y resolví incidentes de niveles I, II y III.",
-        "Administré la infraestructura de redes y los racks de comunicaciones."
+        "Coordinar las actividades del equipo de sistemas y el cumplimiento de los acuerdos de nivel de servicio (SLA).",
+        "Desarrollar módulos contables con PHP, MySQL, .NET, HTML y CSS.",
+        "Supervisar el soporte técnico para entidades bancarias y resolver incidentes de niveles I, II y III.",
+        "Administrar la infraestructura de redes y los racks de comunicaciones."
       ]
     },
     {
@@ -78,7 +78,7 @@
       "endDate": "2024-04",
       "score": "4.5",
       "courses": [],
-      "honors": "Grado de honor por promedio académico de 4.5"
+      "honors": "Grado de honor por promedio académico de 4.5 sobre 5.0."
     },
     {
       "institution": "SENA",

@@ -6,7 +6,7 @@
     "email": "oscarsantaacosta@gmail.com",
     "phone": "+573125861177",
     "url": "https://www.linkedin.com/in/oscar-santa-acosta",
-    "summary": "I am a systems engineer. I build software, connect services and automate processes to turn business needs into working solutions. My experience combines full-stack development, infrastructure and technical guidance for teams and customers.",
+    "summary": "I am a systems engineer with experience in full-stack development, process automation and service integration. I lead IT operations, overseeing servers, IT equipment, information security and software development.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -22,8 +22,8 @@
       },
       {
         "network": "GitHub",
-        "username": "",
-        "url": ""
+        "username": "oscar-del",
+        "url": "https://github.com/oscar-del"
       }
     ]
   },
@@ -34,14 +34,14 @@
       "url": "",
       "startDate": "2022-06",
       "endDate": null,
-      "summary": "Software development, automation and integrations for an SMS communication platform.",
+      "summary": "I currently develop software, automate processes and build integrations at LabsMobile. I also lead the IT department and manage the company's servers and IT infrastructure.",
       "highlights": [
-        "I manage development projects from planning through production deployment.",
-        "I develop and maintain a Python SVM SMS classifier to improve spam detection.",
-        "I implement n8n automations for notifications and internal tasks.",
-        "I develop integration modules for Make, n8n, Zapier, Shopify, npm and Composer.",
-        "I support sales teams and customers in technical meetings to help integrate the API.",
-        "I lead IT operations, technology equipment management and information security."
+        "Manage projects from planning through deployment to production.",
+        "Develop and maintain an SMS classifier using support vector machine (SVM) models in Python to improve spam detection.",
+        "Implement n8n automations to manage notifications and internal tasks.",
+        "Develop integration modules for Make, n8n, Zapier, Shopify, npm and Composer.",
+        "Support the sales team and customers in technical meetings to facilitate API integration.",
+        "Lead IT operations, manage the company's servers and IT equipment, and oversee information security."
       ]
     },
     {
@@ -50,12 +50,12 @@
       "url": "",
       "startDate": "2013-07",
       "endDate": "2022-06",
-      "summary": "Systems team coordination, internal software development and infrastructure administration.",
+      "summary": "Coordinated the IT team, developed internal software and managed IT infrastructure.",
       "highlights": [
-        "I coordinated systems team activities and service-level agreement (SLA) compliance.",
-        "I developed accounting modules with PHP, MySQL, .NET, HTML and CSS.",
-        "I supervised technical support for banking institutions and resolved level I, II and III incidents.",
-        "I administered network infrastructure and communication racks."
+        "Coordinated IT team activities and ensured compliance with service-level agreements (SLAs).",
+        "Developed accounting modules using PHP, MySQL, .NET, HTML and CSS.",
+        "Supervised technical support for banking institutions and resolved Tier 1, 2 and 3 incidents.",
+        "Administered network infrastructure and communications racks."
       ]
     },
     {
@@ -64,7 +64,7 @@
       "url": "",
       "startDate": "2012-07",
       "endDate": "2013-01",
-      "summary": "Level I technical support and preventive and corrective computer maintenance.",
+      "summary": "Provided Tier 1 technical support and performed preventive maintenance and computer repairs.",
       "highlights": []
     }
   ],
@@ -78,7 +78,7 @@
       "endDate": "2024-04",
       "score": "4.5",
       "courses": [],
-      "honors": "Graduated with honors with a 4.5 academic average"
+      "honors": "Graduated with honors; academic average: 4.5 out of 5.0"
     },
     {
       "institution": "SENA",
@@ -153,7 +153,7 @@
         "Grafana",
         "n8n",
         "Make",
-        "APIs REST",
+        "REST APIs",
         "Shopify"
       ]
     }
@@ -173,7 +173,7 @@
       "name": "Intelligent SMS classification",
       "isActive": false,
       "category": "Machine learning",
-      "description": "Development and maintenance of a Python SVM message classifier to improve spam detection.",
+      "description": "Development and maintenance of a message classification system using support vector machine (SVM) models in Python to improve spam detection.",
       "highlights": [
         "Python",
         "SVM",
@@ -184,12 +184,12 @@
       "context": "LabsMobile"
     },
     {
-      "name": "Services working together",
+      "name": "Connected services",
       "isActive": false,
       "category": "API integrations",
-      "description": "Modules connecting the LabsMobile API to Make, n8n, Zapier, Shopify, npm and Composer.",
+      "description": "Modules that connect the LabsMobile API with Make, n8n, Zapier, Shopify and the npm and Composer ecosystems.",
       "highlights": [
-        "APIs REST",
+        "REST APIs",
         "Shopify",
         "npm",
         "Composer"
@@ -202,7 +202,7 @@
       "name": "Fewer manual tasks",
       "isActive": false,
       "category": "Automation",
-      "description": "n8n workflows for notifications and internal tasks, reducing manual intervention.",
+      "description": "n8n workflows that manage notifications and internal tasks, reducing manual work.",
       "highlights": [
         "n8n",
         "Make",

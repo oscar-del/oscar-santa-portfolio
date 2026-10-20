@@ -34,7 +34,7 @@ const date = (value: string) => value ? new Intl.DateTimeFormat(lang, { month: "
     <p class="hero-employment">{c.current}</p>
     <p class="hero-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" /></svg>{cv.basics.location.city}, {cv.basics.location.region}</p>
     </div>
-    <p class="hero-intro">{es ? "Ingeniero de sistemas con experiencia en" : "Systems engineer with experience in"} <strong>{es ? "desarrollo de software, integraciones de APIs y automatización" : "software development, API integrations and automation"}</strong>. {es ? "Acompaño a equipos y clientes desde la planificación hasta la puesta en producción." : "I support teams and customers from the first idea through production deployment."}</p>
+    <p class="hero-intro">{es ? "Ingeniero de sistemas con experiencia en" : "Systems engineer with experience in"} <strong>{es ? "desarrollo de software, integraciones de APIs y automatización" : "software development, API integrations and automation"}</strong>. {es ? "Lidero el departamento de informática y administro servidores e infraestructura tecnológica." : "I lead the IT department and manage servers and IT infrastructure."}</p>
     <div class="hero-actions no-print">
       <a class="button" href={`mailto:${cv.basics.email}`}><span aria-hidden="true"><Mail /></span>{c.mail}</a>
       {profiles.map(profile => <a class="button" href={profile.url} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">{profile.network === "GitHub" ? <GitHub /> : profile.network === "LinkedIn" ? <LinkedIn /> : null}</span>{profile.network}</a>)}
